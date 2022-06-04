@@ -27,6 +27,8 @@
   #include
   include_directories(${CMAKE_SOURCE_DIR}/include)
   include_directories(${CMAKE_SOURCE_DIR}/LLVMTarget/X86)
+  include_directories(../)
+  include_directories(./)
 
   add_library(${PROJECT_NAME} STATIC ${SOURCE} )
 
