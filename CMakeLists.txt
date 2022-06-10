@@ -74,4 +74,6 @@ add_subdirectory(LLVMDemangle)
 
 add_subdirectory(LLVMLinker)
 
+add_subdirectory(LLVMProfileData)
+set_target_properties(LLVMProfileData PROPERTIES FOLDER "ProfileData")
 

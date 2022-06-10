@@ -195,9 +195,9 @@ void MachineFunction::init() {
     WasmEHInfo = new (Allocator) WasmEHFuncInfo();
   }
 
-  assert(Target.isCompatibleDataLayout(getDataLayout()) &&
-         "Can't create a MachineFunction using a Module with a "
-         "Target-incompatible DataLayout attached\n");
+  // assert(Target.isCompatibleDataLayout(getDataLayout()) &&
+  //        "Can't create a MachineFunction using a Module with a "
+  //        "Target-incompatible DataLayout attached\n");
 
   PSVManager =
     llvm::make_unique<PseudoSourceValueManager>(*(getSubtarget().
